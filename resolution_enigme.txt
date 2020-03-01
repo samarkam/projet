@@ -1,0 +1,33 @@
+
+void augmenter_score(int *score)
+{
+score ++;
+}
+void diminuer_score(int *score)
+{
+score --;
+}
+
+
+/* cette fonction fais tester l'ouverture de l'enigme et comparer la reponse 
+de l'utilisateur et retourne 1 pour resultat correcte et 0 si non */
+
+
+int resolution_enigme(int ouverture_Enigme, int selection, int correcte,int *score)
+{
+int EnigmeResolutuion=0;    
+if (ouvertureEnigme ==1)
+{   
+if(selection==correcte)         
+EnigmeResoulution=1  //resultat pausitive 
+else 
+EnigmeResoulution=0 //resultat negative
+} 
+    
+if(EnigmeResoulution==1)  
+augmenter_score(&score);
+else 
+diminuer_score(&score);
+
+return EnigmeResolution ; //retourner la resultat de l'enigme(une chance)
+}

@@ -1,0 +1,13 @@
+/* les questions des enigmes dans un dossier texte question.h 
+les reponses des enigmes dans un dossier texte reponse.h 
+le meme ligne donne reference dans les deux fichiers */
+
+#include <time.h> //ajouter a la bibliotheque
+/* cette fonction retourne le numero d'enigme a afficher */
+int enigme_aleatoire(int num) // num represente le nombre (de lignes)  des questions existe dans question.h
+{
+int n=0;
+srand(time(NULL)); //initialisation du rand
+n= (rand() % num) +1 ; // retourne un nombre aleatoire entre 1 et num 
+return n;
+}

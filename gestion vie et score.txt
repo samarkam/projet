@@ -1,0 +1,13 @@
+
+
+void mise_a_jour_score_vie(int score,int *vie)
+{
+if (score ==0)
+&vie --;
+if (score ==Max_score)
+&vie ++; 
+if (&vie ==0)
+quitter_jouer();
+
+}
+
